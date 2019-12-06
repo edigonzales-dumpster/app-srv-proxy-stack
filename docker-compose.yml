@@ -1,0 +1,13 @@
+version: '3'
+services:
+    proxy:
+        image: sogis/app-serv-proxy:latest
+        environment:
+            ACME_AGREE: "true"
+        restart: always
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - /certs/.caddy:/root/.caddy
+        
