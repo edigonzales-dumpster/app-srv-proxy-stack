@@ -1,7 +1,7 @@
 version: '3'
 services:
     proxy:
-        image: sogis/app-serv-proxy:latest
+        image: sogis/app-srv-proxy:latest
         environment:
             ACME_AGREE: "true"
         restart: always
